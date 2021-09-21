@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: lightsteelblue;
+}
+
+header {
+    background: white;
+    height: 50px;
+    width: 800px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+
+main {
+    background: white;
+    width: 800px;
+}
+
+footer {
+    background: white;
+    height: 350px;
+    width: 800px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+ImageBox {
+    text-align: center;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+}
+
+left_side {
+    border: 1px;
+    float: left;
+    width: 55%;
+}
+
+right_side {
+    border: 1px;
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.btn {
+    font-size: 1.5rem;
+    display: inline-block;
+    transition:all 0.1s;
+}
+.btn:active{
+    transform: translateY(3px);
+}
+
+.btnBuy{
+    text-decoration: none;
+    background-color: lightsteelblue;
+    color: white;
+    padding: 0px 40px 0px 40px;
+}
+.btnMenu:active{
+    border-bottom: 2px;
+}
+
+.btnMenu{
+    text-decoration: none;
+    background-color: lightsteelblue;
+    color: white;
+    padding: 0px 15px 0px 15px;
+}
+.btnBuy:active{
+    border-bottom: 2px;
+}
+
+
+h3 {
+    padding: 0px 0px 0px 15px;
+    color: lightsteelblue;
+}
+
+h5 {
+    color: lightsteelblue;
+}
+
+h1 {
+    color: lightblue;
+}
+
+.check {
+    padding: 0px 0px 0px 15px;
+}
