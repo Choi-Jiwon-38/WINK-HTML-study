@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: black;
+}
+
+header {
+    background: white;
+    height: 20px;
+    width: 600px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+
+main {
+    background: white;
+    width: 600px;
+}
+
+footer {
+    background: white;
+    height: 250px;
+    width: 600px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.profile {
+    margin: 10px 0px 0px 20px;
+    width: 30%;
+}
+
+.pro {
+    width: 200px;
+    height: 200px;
+}
+
+left_side {
+    border: 1px;
+    float: left;
+    width: 40%;
+}
+
+right_side {
+    border: 1px;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.Age {
+    border: 1px;
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.Weight {
+    border: 1px;
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.Height {
+    border: 1px;
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+h3 {
+    color: forestgreen;
+}
+
+h5 {
+    color: forestgreen;
+}
