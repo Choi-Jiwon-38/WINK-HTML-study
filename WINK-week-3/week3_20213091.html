@@ -10,7 +10,7 @@
         <br><h1 style="color: white">CHOI'S PLAYLIST</h1><br>
     </header>
     <nav>
-        <dic class="menu_wrap">
+        <div class="menu_wrap">
             <ul class ="dep1">
                 <li>
                     <a herf="#">MENU 1</a>
@@ -45,18 +45,21 @@
                     </ul>
                 </li>
             </ul>
-        </dic>
+        </div>
     </nav>
     <section>
         <div class="center"> <!--이미지 위에 마우스 커서를 올리면 mp3가 재생시키기 위해 넣어둔 것인데 구현이 안됨-->
-            <div1 ><image class="music" src="Fine.jpg" onmouseover="musicPlay('잘지내요_정승환.mp3')" onmouseleave="musicPlay('')"></image></div1>
+            <div1><image class="music" src="Fine.jpg" onmouseover="musicPlay('잘지내요_정승환.mp3')" onmouseleave="musicPlay('')"></image></div1>
             <div1><image class="music" src="GoodNight_GoodDream.jpg" onmouseover="musicPlay('좋은 밤 좋은 꿈_너드커넥션.mp3')" onmouseleave="musicPlay('')"></image></div1>
             <div1><image class="music" src="Perfect.jpg" onmouseover="musicPlay('Perfect_10cm.mp3')" onmouseleave="musicPlay('')"></image></div1> <br>
         </div>
 
         <article>
-            <div class="center">
+            <div class="center" id="picture" onclick="playYoutube()">
                 <image class="youtube left" src="RunWithMe.jpg"></image>
+            </div>
+            <div class="center" id="youtube">
+                <<iframe width="600" height="340" src="https://www.youtube.com/embed/xqTwKxId6D8?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=xqTwKxId6D8" frameborder="0"></iframe>>
             </div>
         </article>
 
@@ -106,6 +109,12 @@
         hz.src = $mp3;
         hz.play();
     }
+
+    function playYoutube() {
+        document.getElementById("picture").style.display = "none"
+        document.getElementById("youtube").style.display = "block"
+    }
+
 </script>
 
 
