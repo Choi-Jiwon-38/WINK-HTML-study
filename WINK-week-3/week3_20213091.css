@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+head, body {
+    display: block;
+    background: darkslategray;
+    text-align: center;
+    border: 1px solid red;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu_wrap .dep1 {
+    font-size: 0;
+}
+
+.menu_wrap .dep1 > li {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    background: dimgray;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.menu_wrap .dep1 > li:hover > a {
+    background: cornflowerblue;
+    color: white;
+}
+
+.menu_wrap .dep1 > li:hover > .dep2 {
+    display: block;
+}
+
+.menu_wrap .dep1 > li > a {
+    display: block;
+    padding: 10px 0;
+}
+.menu_wrap .dep2 {
+    display: none;
+    background: dimgray;
+}
+
+.menu_wrap .dep2 a {
+    display: block;
+    padding: 10px 0;
+}
+
+.menu_wrap .dep2 a:hover {
+    text-decoration: underline;
+}
+
+div1 {
+    float: left;
+;
+}
+
+.music {
+    margin: 10px;
+    width: 300px;
+    depth: 300px;
+ }
+
+login_box {
+    display: inline-block;
+    width: 200px;
+    depth: 300px;
+    background: slategray;
+    text-align: center;
+}
+
+article {
+    display: block;
+}
+
+.button {
+
+}
+
+.center {
+    display: inline-block;
+    text-align: center;
+}
+
+.youtube {
+    width: 600px;
+}
+
+.left {
+    float: left;
+}

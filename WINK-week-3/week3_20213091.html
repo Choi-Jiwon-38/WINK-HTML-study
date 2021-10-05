@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>WINK 3주차 과제</title>
+    <link rel="stylesheet" href="week3_20213091.css">
+</head>
+<body>
+    <header>
+        <br><h1 style="color: white">CHOI'S PLAYLIST</h1><br>
+    </header>
+    <nav>
+        <dic class="menu_wrap">
+            <ul class ="dep1">
+                <li>
+                    <a herf="#">MENU 1</a>
+                    <ul class = "dep2">
+                        <li><a href="#">메뉴 1-1</a></li>
+                        <li><a href="#">메뉴 1-2</a></li>
+                        <li><a href="#">메뉴 1-3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a herf="#">MENU 2</a>
+                    <ul class = "dep2">
+                        <li><a href="#">메뉴 2-1</a></li>
+                        <li><a href="#">메뉴 2-2</a></li>
+                        <li><a href="#">메뉴 2-3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a herf="#">MENU 3</a>
+                    <ul class = "dep2">
+                        <li><a href="#">메뉴 3-1</a></li>
+                        <li><a href="#">메뉴 3-2</a></li>
+                        <li><a href="#">메뉴 3-3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a herf="#">MENU 4</a>
+                    <ul class = "dep2">
+                        <li><a href="#">메뉴 4-1</a></li>
+                        <li><a href="#">메뉴 4-2</a></li>
+                        <li><a href="#">메뉴 4-3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </dic>
+    </nav>
+    <section>
+        <div class="center">
+            <div1><image class="music" src="Fine.jpg"></image></div1>
+            <div1><image class="music" src="GoodNight_GoodDream.jpg"></image></div1>
+            <div1><image class="music" src="Perfect.jpg"></image></div1> <br>
+        </div>
+
+        <article>
+            <div class="center">
+                <image class="youtube left" src="RunWithMe.jpg"></image>
+            </div>
+        </article>
+
+    </section>
+<aside>
+    <form name="f1" method="post">
+        <login_box>
+            <h2>User ID</h2> <!--KeyCode 13이 enter 키라고 해서 넣어둔 것인데 구현이 안됨-->
+                <input type="text", size="20", name="user_id" id="user_id", onKeyDown="if(event.KeyCode==13) LoginCheck()">
+            <h2>Password</h2>
+                <input type="text", size="20", name="user_password", id="user_passwd", onKeyDown="if(event.Keycode==13) LoginCheck()">
+            <div2>
+                <button type="button" onclick="LoginCheck()">LOGIN</button><br>
+            </div2>
+        </login_box>
+    </form>
+</aside>
+<footer>footer</footer>
+</body>
+<script>
+    function LoginCheck() {
+        var form = document.f1;
+        if (form.user_id.value != "chjwoo123") {
+            alert("유요한 아이디를 입력해주십시오.");
+            form.user_id.focus();
+            return;
+        }
+
+        if (form.user_password.value != "choijw9837") {
+            alert("유효한 비밀번호를 입력해주십시오.");
+            form.user_password.focus();
+            return;
+        }
+        form.action = "login_ok.php";
+        form.submit();
+    }
+</script>
+
+
+</html>
