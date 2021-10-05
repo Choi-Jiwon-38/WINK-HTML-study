@@ -103,3 +103,11 @@ article {
 footer {
     color: whitesmoke;
 }
+
+.music:hover {
+    opacity: 0.5
+}
+
+#youtube {
+    display: none;
+}
