@@ -48,10 +48,10 @@
         </dic>
     </nav>
     <section>
-        <div class="center">
-            <div1><image class="music" src="Fine.jpg"></image></div1>
-            <div1><image class="music" src="GoodNight_GoodDream.jpg"></image></div1>
-            <div1><image class="music" src="Perfect.jpg"></image></div1> <br>
+        <div class="center"> <!--이미지 위에 마우스 커서를 올리면 mp3가 재생시키기 위해 넣어둔 것인데 구현이 안됨-->
+            <div1 ><image class="music" src="Fine.jpg" onmouseover="musicPlay('잘지내요_정승환.mp3')" onmouseleave="musicPlay('')"></image></div1>
+            <div1><image class="music" src="GoodNight_GoodDream.jpg" onmouseover="musicPlay('좋은 밤 좋은 꿈_너드커넥션.mp3')" onmouseleave="musicPlay('')"></image></div1>
+            <div1><image class="music" src="Perfect.jpg" onmouseover="musicPlay('Perfect_10cm.mp3')" onmouseleave="musicPlay('')"></image></div1> <br>
         </div>
 
         <article>
@@ -99,6 +99,12 @@
         }
         form.action = "login_ok.php";
         form.submit();
+    }
+
+    function musicPlay($mp3){
+        hz = document.getElementById("hz");
+        hz.src = $mp3;
+        hz.play();
     }
 </script>
 
