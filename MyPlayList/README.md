@@ -11,3 +11,4 @@
 
 1. myPlayList_inside.html 에 있는 각 4개의 CD가 hover가 아닌 원클릭을 하였을 시에 이미지 회전이 적용되도록
 2. myPlayList.html에 회원가입 프론트도 함께 구현할 것
+3. js나 css를 이용하여 한글 폰트 바꿀 
