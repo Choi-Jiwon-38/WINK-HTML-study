@@ -1,0 +1,149 @@
+/*  Initial Setting() */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+    font-size: 180%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+nav {
+    width: 800px;
+    margin: auto;
+}
+
+ul li { 
+    list-style: none;
+    color: black;
+}
+
+h4 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+#menu {
+    width: 800px;
+    height: 60px;
+    line-height: 170%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 'My PlayList', '목소리', '그리고 봄', '십이월 이십오일의 고백' <---- */
+#menu > ul > li {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+/* 위에서 언급한 메뉴들의 소메뉴 <---- */
+#menu > ul > li > ul {
+    position: absolute;
+    display: none;
+}
+
+#menu > ul > li:hover > ul {
+    display: block;
+    background-color: whitesmoke;
+}
+
+.mainMenu {
+    background-color: gray;
+}
+
+.subMenu {
+    width: 200px;
+    padding-left: 0;
+}
+
+.whiteText {
+    color: white;
+    text-decoration: none;
+}
+
+#pad {
+    padding-left: 0;
+}
+
+/* <ASIDE> & <MAIN> */
+#aside_and_main {
+    text-align: center;
+}
+
+/* <ASIDE> */
+aside {
+    float: left;
+    margin-left:50px;
+    list-style: none;
+}
+
+
+/* <MAIN> */
+main {
+    text-align: center;
+}
+
+.LP {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.LP:hover {
+    animation: rotate_image 60s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+.lyrics {
+    display:inline-block;
+    background-color: antiquewhite;
+    border-radius: 2%;
+    width: 650px;
+    height: auto;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 140px;
+}
+
+
+
+/* <FOOTER> */
+#footer {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+#footer .footerLogo {
+    float: left;
+}
+
+#footer .addressWrap {
+    float: left;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*
+[====  까먹었거나 몰랐던 부분 작성용  ====]
+
+<. 과 #의 차이점>
+- '.' <-- class는 선택자로 지정 시 '.' 기호를 사용함 
+- '#' <-- id는 선택자로 지정 시 '#' 기호를 사용함
+
+*/
